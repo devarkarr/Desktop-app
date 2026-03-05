@@ -1,6 +1,7 @@
 import electronLogo from './assets/electron.svg'
 import { useState } from 'react'
 import { useQuery } from '@tanstack/react-query'
+import { Link } from '@tanstack/react-router'
 
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 const fetchPosts = async () => {
@@ -43,6 +44,9 @@ function App(): React.JSX.Element {
         <button onClick={handleRead} className=" py-2 px-3 rounded bg-indigo-500 text-white m-3">
           Ping Main Process
         </button>
+        <Link to="/login">
+          <button className=" py-2 px-3 rounded bg-indigo-500 text-white m-3">Login</button>
+        </Link>
       </div>
       <img alt="logo" className="size-20" src={electronLogo} />
 
