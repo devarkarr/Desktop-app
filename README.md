@@ -1,4 +1,4 @@
-# my-app
+# Desktop app
 
 An Electron application with React and TypeScript
 
